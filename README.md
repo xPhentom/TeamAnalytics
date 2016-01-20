@@ -5,42 +5,42 @@
 Team Analytics is een site gecreëerd door Wouter Roozeleer, student van Odisee Hogeschool. Het doel van deze site is het vergemakkelijken van teamwork tussen studenten en teambeheer voor docenten naar studenten toe.
 
 Studenten kunnen hierin:
-..* Quizen maken om hun positie in teamwork te vinden 
-..* Elkaar kunnen beoordelen op teamwork
-..* Files opladen 
-..* Chatten
+- Quizen maken om hun positie in teamwork te vinden 
+- Elkaar kunnen beoordelen op teamwork
+- Files opladen 
+- Chatten
 
 Docenten kunnen hierin:
-..* Groepen aanmaken of verwijderen
-..* Studenten toevoegen aan groepen of verwijderen
+- Groepen aanmaken of verwijderen
+- Studenten toevoegen aan groepen of verwijderen
 
 ## Onderdelen bespreken
 
 ### Student
 
-** Quizen maken **
+**Quizen maken**
 
 Een quiz kan de gebruiker (de student) meer duidelijkheid geven over zijn positie in een team. Zo kan je de Belbin test gebruiken om hier een beter zicht op te krijgen.
 
-** Beoordelen (peer-2-peer evaluatie) **
+**Beoordelen (peer-2-peer evaluatie)**
 
 Beoordelingen worden gegeven van student op student. Deze kan constant aangepast worden zodat de docent een grafiek kan krijgen rond deze gebeurtenissen. Aan de hand van deze evaluatiescores kan de website ook een "leaderboard" creëeren.
 
-** Files opladen **
+**Files opladen**
 
 Om de samenwerking tussen studenten vlotter te laten verlopen, heeft de website een opslagruimte voor elke groep. Zo worden files veel sneller en makkelijker gedeeld.
 
-** Chatten  **
+**Chatten**
 
 Om de communicatie beter te laten verlopen tussen studenten (wat vaak een groot probleem kan zijn), heeft de site een chatfunctie. De bedoeling is om alleen met de studenten chtten met wie je in een groep zit.
 
 ### Docent
 
-** Groepen aanmaken en verwijderen **
+**Groepen aanmaken en verwijderen**
 
 Een teamwork bestaat natuurlijk uit een groep. De leden van zo een groep worden gekozen door de docent zelf.
 
-** Studenten toevoegen of verwijderen uit een groep **
+**Studenten toevoegen of verwijderen uit een groep**
 
 Het gebeurd wel eens vaker dat studenten wisselen van groep, uit een groep gaan of een deelnemen aan een al bestaande groep. De docent kan dit dan ook toepassen zodat de student meteen kan meevolgen.
 
@@ -67,6 +67,14 @@ Wat er wel nog ontbreekt is natuurlijk de backend. Hiervoor zal ik een design ma
 ### Mijlpaal 1 - deadline: eind 2de semester 15-16
 
 Voor deze mijlpaal wil ik ervoor zorgen dat de docent zelf al gebruikers kan aanmaken zodat niet iedereen zomaar een account zou kunnen maken. Elke student zou ook al één of meerdere quizen moeten kunnen afleggen. Dit betekent dus ook dat hij/zij al kan inloggen. Een eventuele extra hieruit is de percentages te laten zien aan de hand van [DD3](https://d3js.org)
+
+#### Requierments
+
+- Docent kan inloggen
+- Docent kan studenten aanmaken
+- Studenten kunnen inloggen en basispaswoord aanpassen
+- Studenten kunnen quizes makes
+- (Extra) Studenten krijgen een duidelijke, visuele weergave resultaten quiz 
 
 ##TODO-list
 
