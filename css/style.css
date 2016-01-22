@@ -1,0 +1,39 @@
+/*Fixed styling
+Dit zal standaard op de site staan
+*/
+
+body{
+  background-color: #263238;
+  color:white;
+}
+
+.nav-wrapper{
+  background-color: #454560;
+}
+
+.nav-wrapper img{
+  height: 56px;
+  margin-left: 10px;
+}
+
+/*Variable design*/
+
+#introtext{
+  margin-top: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.4vw;
+  background-color: #2D3641;
+}
+
+#introtext img{
+  margin-left: 35%;
+  width: 30%;
+  margin-bottom: 5%
+}
+
+#inlogicon{
+  margin-left: 40%;
+}
