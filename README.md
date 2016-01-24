@@ -102,6 +102,7 @@ Voor deze mijlpaal wil ik ervoor zorgen dat de docent zelf al gebruikers kan aan
 * [x] Keuze maken: framework en design
 * [x] Keuze maken: programmeertalen kiezen
 * [ ] Onderzoeken: Quizes
+* [ ] Schrijven: User stories
 
 ### Doen
 
