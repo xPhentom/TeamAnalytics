@@ -2,6 +2,7 @@
 Dit zal standaard op de site staan
 */
 
+<<<<<<< HEAD
 body {
     background-color: #263238;
     color: white;
@@ -33,10 +34,25 @@ a:visited {
 .navItems {
     width: 150px;
     text-align: center;
+=======
+body{
+  background-color: #263238;
+  color:white;
+}
+
+nav{
+  background-color: #454560;
+}
+
+.nav-wrapper img{
+  height: 56px;
+  margin-left: 10px;
+>>>>>>> origin/master
 }
 
 /*Variable design*/
 
+<<<<<<< HEAD
 
 /*Desktop*/
 
@@ -104,4 +120,47 @@ a:visited {
 #QuizScherm {
     margin-top: 10%;
     background-color: #2f3345;
+=======
+/*Desktop*/
+
+/*Intropagina*/
+.textbox{
+  margin-top: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.2vw;
+  background-color: #2f3345;
+  line-height: 2vw;
+}
+
+.textbox img{
+  margin-left: 35%;
+  width: 30%;
+  margin-bottom: 5%
+}
+
+
+/*Docent-pagina's*/
+
+/*Inlogpagina*/
+
+#btnLoginDocent{
+  clear: left;
+  float:right;
+  background-color: #454560;
+
+}
+#inlogicon{
+  margin-left: 40%;
+}
+
+/*Dashboard*/
+
+.tiles{
+  background-color: #2f3345;
+  height: 100%;
+  margin-top: 10%;
+>>>>>>> origin/master
 }
