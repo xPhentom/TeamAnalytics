@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <!--Laat de browser weten dat het geoptimalizeerd is voor mobiel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo"><img alt="logo" src="../logo.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+     <div class="col s10 offset-s1 m8 offset-m2 l4 offset-l4"><p class="z-depth-3 textbox">
+        <i class="large material-icons" id="inlogicon">perm_identity</i>
+            <br>
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+
+            <button class="btn waves-effect waves-light" id="btnLoginDocent" type="submit" name="action">Inloggen <!-- TODO: Gebruik prerender -->
+                <i class="material-icons right">send</i>
+            </button>
+
+       </p></div>
+  </div>
+
+
+    <!--Import jQuery voor materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

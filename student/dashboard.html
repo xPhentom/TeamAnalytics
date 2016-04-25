@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <!--Laat de browser weten dat het geoptimalizeerd is voor mobiel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+
+      <div class="nav-wrapper">
+      <div id="logoclick"><img id = "logo" class="brand-logo" alt="logo" src="../logo.png"></div>
+      <ul class="right nav-mobile hide-on-med-and-down">
+        <li><div id="gotoStudentLogin" class="waves-effect navItems">Student</a></li>
+        <li><div id="gotoDocentLogin" class="waves-effect navItems">Docent</a></li><!-- TODO: add delay, om het effect af te spelen -->
+      </ul>
+      <ul id="slide-out" class="side-nav z-depth-4">
+        <li><a href="student/index.html" class="SideNavItems waves-effect"><b>Student</b></a></li>
+        <li><a href="docent/index.html" class="SideNavItems waves-effect"><b>Docent</b></a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+  <div id="dashboardstudent" class="row">
+      <div id="TileStudentToevoegen" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
+          <p class="dashboardtilestekst">Studenten toevoegen</p>
+      </div>
+      <div id="TileStudenBekijken" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
+          <p class="dashboardtilestekst">Studenten bekijken</p>
+      </div>
+      <div class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
+          <p class="dashboardtilestekst">Groepen bewerken</p>
+      </div>
+      <div id="gotoStudentQuiz" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
+          <p class="dashboardtilestekst">Quiz maken</p>
+      </div>
+  </div>
+
+<!--**********************************************************************************
+***********************************Q U I Z *******************************************
+************************************************************************************** -->
+
+
+  <div id="StudentQuiz" class="row">
+      <div id="QuizScherm" class="col s8 m8 l8 offset-s2 offset-l2 offset-m2 z-depth-4">
+
+        <div class="col s8 m6 l4 offset-s2 offset-l4"><div class="waves-effect waves-light btn" id="btnIndienen">Indienen</div>
+      </div>
+  </div>
+
+
+    <!--Import jQuery voor materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/studentdashboardscript.js"></script>
+  </body>
+</html>

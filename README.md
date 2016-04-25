@@ -1,20 +1,38 @@
+
+
+<div style="text-align:center"><img src = "logo.png" /></div>
+
 # TeamAnalytics
 
-## Uitleg
+## Inhoudstafel
+
+[Uitleg](#Uitleg)
+
+[Onderdelen bespreken](#OnderdelenBespreken)
+
+[Projectverloop](#projectverloop)
+
+[TODO](#TODO)
+
+[Resultaten](#Resultaten)
+
+[Licentie](#Licentie)
+
+## <a name="Uitleg"></a>Uitleg
 
 Team Analytics is een site gecreëerd door Wouter Roozeleer, student van Odisee Hogeschool. Het doel van deze site is het vergemakkelijken van teamwork tussen studenten en teambeheer voor docenten naar studenten toe.
 
 Studenten kunnen hierin:
-- Quizen maken om hun positie in teamwork te vinden 
+- Quizen maken om hun positie in teamwork te vinden
 - Elkaar kunnen beoordelen op teamwork
-- Files opladen 
+- Files opladen
 - Chatten
 
 Docenten kunnen hierin:
 - Groepen aanmaken of verwijderen
 - Studenten toevoegen aan groepen of verwijderen
 
-## Onderdelen bespreken
+## <a name="OnderdelenBespreken"></a> Onderdelen bespreken
 
 ### Student
 
@@ -44,7 +62,7 @@ Een teamwork bestaat natuurlijk uit een groep. De leden van zo een groep worden 
 
 Het gebeurd wel eens vaker dat studenten wisselen van groep, uit een groep gaan of een deelnemen aan een al bestaande groep. De docent kan dit dan ook toepassen zodat de student meteen kan meevolgen.
 
-## Projectverloop
+## <a name="Projectverloop"></a> Projectverloop
 
 ### Voorbereiding
 
@@ -60,38 +78,61 @@ Eens dit allemaal in orde is kan ik beginnen aan het zoeken van goede quizes in 
 
 #### Doen
 
-Eens alle voorbereiding klaar is kan ik beginnen met een template te maken om zo al een beter beeld te vormen over de website. Hiermee zit ik al goed aan de front-end om volledig te beginnen. 
+Eens alle voorbereiding klaar is kan ik beginnen met een template te maken om zo al een beter beeld te vormen over de website. Hiermee zit ik al goed aan de front-end om volledig te beginnen.
 
-Wat er wel nog ontbreekt is natuurlijk de backend. Hiervoor zal ik een design maken van de databank met hierin de tabellen die ik nodig zal hebben en hoe deze aan elkaar gelinkt zijn. Dit is iets wat ik in het eerste semester geleerd heb, namelijk dat het design van de database zeer belangrijk is en volledig moet uitgeschreven worden voor je echt kan gaan werken. 
+Wat er wel nog ontbreekt is natuurlijk de backend. Hiervoor zal ik een design maken van de databank met hierin de tabellen die ik nodig zal hebben en hoe deze aan elkaar gelinkt zijn. Dit is iets wat ik in het eerste semester geleerd heb, namelijk dat het design van de database zeer belangrijk is en volledig moet uitgeschreven worden voor je echt kan gaan werken.
 
 ### Mijlpaal 1 - deadline: eind 2de semester 15-16
 
 Voor deze mijlpaal wil ik ervoor zorgen dat de docent zelf al gebruikers kan aanmaken zodat niet iedereen zomaar een account zou kunnen maken. Elke student zou ook al één of meerdere quizen moeten kunnen afleggen. Dit betekent dus ook dat hij/zij al kan inloggen. Een eventuele extra hieruit is de percentages te laten zien aan de hand van [DD3](https://d3js.org)
 
-#### Requierments
+####  Requirements
 
 - Docent kan inloggen
 - Docent kan studenten aanmaken
 - Studenten kunnen inloggen en basispaswoord aanpassen
 - Studenten kunnen quizes makes
-- (Extra) Studenten krijgen een duidelijke, visuele weergave resultaten quiz 
+- (Extra) Studenten krijgen een duidelijke, visuele weergave resultaten quiz
 
-##TODO-list
+## <a name="TODO"></a> TODO-list
 
 ### Voorbereiding
 
-* [ ] Keuze maken: pre-processor
-* [ ] Keuze maken: framework en design
-* [ ] Keuze maken: programmeertalen kiezen
+* [x] Keuze maken: pre-processor
+* [x] Keuze maken: framework en design
+* [x] Keuze maken: programmeertalen kiezen
 * [ ] Onderzoeken: Quizes
+* [ ] Schrijven: User stories
 
 ### Doen
 
-* [ ] Template/design maken
-* [ ] Databank tekenen
+* [x] Template/design maken
+* [x] Databank tekenen
+
+### Mijlpaal 1
+
+* [ ] Requierments programmeren
 
 
-## Licentie
+## <a name="Resultaten"></a> Resultaten
+
+### Voorbereiding
+
+Ik heb er al voor gekozen om geen pre-processor te gebruiken aangezien ik al een goede kennis heb over HTML en hiermee vertrouwd ben. Dit geldt ook voor de CSS pre-processor.
+
+Als framework zal ik gebruik maken van [Materializecss](http://materializecss.com/), dit met een oog kijkend op  [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html)
+
+Als programmeertaal ga ik het houden bij de basis om te starten en kijk ik tijdens het project welke talen ik nog zou moeten invoeren.
+
+## Doen
+
+Hier ziet u de basis van de website. Docenten kunnen meerdere accounts aanmaken zodat ze er eentje hebben voor elke klas, zo krijgt de docent ook een simpelere overzicht van zijn studenten.
+
+(krijgt updates doorheen het project)
+
+<div style="text-align:center"><img src = "documentatie/DatabaseDesign.png" /></div>
+
+## <a name="Licentie"></a> Licentie
 
 Copyright 2016 Wouter Roozeleer
 

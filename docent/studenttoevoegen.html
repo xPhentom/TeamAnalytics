@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <!--Laat de browser weten dat het geoptimalizeerd is voor mobiel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo"><img alt="logo" src="../logo.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="Voornaam" id="voornaam" type="text" class="validate">
+
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="Achternaam" id="achternaam" type="text" class="validate">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Paswoord" id="paswoord" type="password" class="validate">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Mail" id="mail" type="email" class="validate">
+
+          </div>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Klas" id="klas" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Les" id="les" type="text" class="validate">
+
+        </div>
+      </form>
+    </div>
+
+    <a id="btnStudentToevoegen" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+
+    <!--Import jQuery voor materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

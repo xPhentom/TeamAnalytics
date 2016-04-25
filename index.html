@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!--Laat de browser weten dat het geoptimalizeerd is voor mobiel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-wrapper">
+            <div><img id="logo" class="brand-logo" alt="logo" src="logo.png"></div>
+            <ul class="right nav-mobile hide-on-med-and-down">
+                <li>
+                    <div id="gotoStudentLogin" class="waves-effect navItems">Student</a>
+                </li>
+                <li>
+                    <div id="gotoDocentLogin" class="waves-effect navItems">Docent</a>
+                </li>
+                <!-- TODO: add delay, om het effect af te spelen -->
+            </ul>
+            <ul id="slide-out" class="side-nav z-depth-4">
+                <li><a href="student/index.html" class="SideNavItems waves-effect"><b>Student</b></a></li>
+                <li><a href="docent/index.html" class="SideNavItems waves-effect"><b>Docent</b></a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+    </nav>
+
+    <div class="row" id="indextekst">
+        <div class="col l6 m10 s10 offset-l3 offset-m1 offset-s1">
+            <p class="z-depth-3 textbox">
+                <img alt="logo" class="z-depth-4" src="logo.png">
+                <br> Team Analytics is een site gecre&#235;erd door Wouter Roozeleer, student van Odisee Hogeschool. Het doel van deze site is het vergemakkelijken van teamwork tussen studenten en teambeheer voor docenten naar studenten toe.</p><span class="flow-text">
+  </span></div>
+    </div>
+
+    <div id="StudentLogin">
+        <div class="row">
+            <div class="col s10 offset-s1 m8 offset-m2 l4 offset-l4">
+                <p class="z-depth-3 textbox">
+                    <i class="large material-icons" id="inlogicon">perm_identity</i>
+                    <br>
+                    <input id="studentemail" type="email" class="validate">
+                    <label for="studentemail">Email</label>
+                    <input id="studentpassword" type="password" class="validate">
+                    <label for="studentpassword">Password</label>
+
+                    <button class="btn waves-effect waves-light" id="btnLoginStudent" type="submit" name="action">Inloggen
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="DocentLogin">
+        <div class="row">
+            <div class="col s10 offset-s1 m8 offset-m2 l4 offset-l4">
+                <p class="z-depth-3 textbox">
+                    <i class="large material-icons" id="inlogicon">perm_identity</i>
+                    <br>
+                    <input id="docentemail" type="email" class="validate">
+                    <label for="docentemail">Email</label>
+                    <input id="docentpassword" type="password" class="validate">
+                    <label for="docentpassword">Password</label>
+
+                    <button class="btn waves-effect waves-light" id="btnLoginDocent" type="submit" name="action">Inloggen
+                        <!-- TODO: Gebruik prerender -->
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Import jQuery voor materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/indexscript.js"></script>
+</body>
+
+</html>

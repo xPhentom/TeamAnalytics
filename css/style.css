@@ -1,0 +1,107 @@
+/*Fixed styling
+Dit zal standaard op de site staan
+*/
+
+body {
+    background-color: #263238;
+    color: white;
+}
+#logo {
+    height: 56px;
+    float: left;
+}
+nav {
+    background-color: #454560;
+}
+.nav-wrapper img {
+    height: 56px;
+    margin-left: 10px;
+}
+#slide-out {
+    background-color: #454560;
+    color: white;
+}
+.SideNavItems {
+    /*Staat klaar indien iets aangepast moet worden*/
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+.navItems {
+    width: 150px;
+    text-align: center;
+}
+
+/*Variable design*/
+
+
+/*Desktop*/
+
+
+/*Intropagina*/
+
+.textbox {
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2.5vh;
+    background-color: #2f3345;
+    line-height: 3vh;
+}
+.textbox img {
+    margin-left: 35%;
+    width: 30%;
+    margin-bottom: 5%
+}
+
+/*Docent-pagina's*/
+
+
+/*Inlogpagina*/
+
+#btnLoginDocent, #btnLoginStudent {
+    margin-top: 1.7vh;
+    float: right;
+    background-color: #454560;
+    font-size: 2.5vh;
+}
+#inlogicon {
+    margin-left: 40%;
+}
+
+/*Dashboard*/
+
+.dashboardtiles {
+    background-color: #454560;
+    height: 35vh;
+    overflow: hidden;
+    margin-top: 8vh;
+}
+.dashboardtilestekst {
+    font-size: 2.5em;
+}
+
+/*Studenten bekijken*/
+
+.studentlijststyle {
+    background-color: #2f3345;
+}
+
+/*Student toevegen ~docent*/
+
+#btnStudentToevoegen {
+    float: right;
+    margin-right: 5vw;
+}
+
+/*Studentpaginas*/
+
+#QuizScherm {
+    margin-top: 10%;
+    background-color: #2f3345;
+}
