@@ -28,7 +28,7 @@ $(document).ready(function() {
             success: function(html) {
                 var rij = jQuery.parseJSON(html);
                 for (var i = 0; i < rij.length; i++) {
-                    $("#studentenlijst").append('<li> <div class="collapsible-header studentlijststyle"> ' + rij[i].STU_achternaam + ' ' + rij[i].STU_voornaam + '</i></div> <div class="collapsible-body"><p>' + rij[i].STU_klas + '</p> <p>' + rij[i].STU_mail + '</p></div></li>');
+                    $("#studentenlijst").append('<li> <div class="collapsible-header studentlijststyle"> ' + rij[i].STU_achternaam + ' ' + rij[i].STU_voornaam + '</i></div> <div class="collapsible-body"><p>' + rij[i].STU_klas + '</p> <p>' + rij[i].STU_mail + '</p> <p>' + rij[i].STU_mail + '</p></div></li>');
 
                 }
                 console.log(html);

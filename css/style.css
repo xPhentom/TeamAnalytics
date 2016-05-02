@@ -1,8 +1,6 @@
 /*Fixed styling
 Dit zal standaard op de site staan
 */
-
-<<<<<<< HEAD
 body {
     background-color: #263238;
     color: white;
@@ -34,7 +32,7 @@ a:visited {
 .navItems {
     width: 150px;
     text-align: center;
-=======
+}
 body{
   background-color: #263238;
   color:white;
@@ -51,8 +49,6 @@ nav{
 }
 
 /*Variable design*/
-
-<<<<<<< HEAD
 
 /*Desktop*/
 
@@ -117,10 +113,10 @@ nav{
 
 /*Studentpaginas*/
 
-#QuizScherm {
-    margin-top: 10%;
+#QuizScherm, #QuizResultaatScherm {
+    margin-top: 5%;
     background-color: #2f3345;
-=======
+}
 /*Desktop*/
 
 /*Intropagina*/
@@ -162,5 +158,4 @@ nav{
   background-color: #2f3345;
   height: 100%;
   margin-top: 10%;
->>>>>>> origin/master
 }

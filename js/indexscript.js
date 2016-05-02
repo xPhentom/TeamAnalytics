@@ -83,6 +83,8 @@ $(document).ready(function() {
             /*Stuur variabelen door naar loginstudent.php*/
             success: function(html) {
 
+              alert(html);
+
                 if (html === "1") {
                     console.log('inloggen gelukt');
                     window.location.href = "http://wouterroozeleer.me/teamanalytics/student/dashboard.html";
