@@ -128,10 +128,11 @@ $(document).ready(function() {
             /*Stuur variabelen door naar loginstudent.php*/
             success: function(html) {
               Materialize.toast('Uw rol is opgeslagen', 3000, 'rounded');
+              console.log(html);
             }
         });
 
-        console.log("hoogste gescoorde is " + maxnaam + " met " + maxwaarde +".")
+        console.log("hoogste gescoorde is " + maxnaam + " met " + maxwaarde +".");
 
         return sh;
     };
