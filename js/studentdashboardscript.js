@@ -109,12 +109,11 @@ $(document).ready(function() {
         var maxnaam = "";
         var maxwaarde = 0;
         $.each(Antwoorden, function(key, value) {
-          var score = value;
-          value = Math.round((value / 490) * 100).toFixed(0);
-            $("#QuizResultaatScherm").append("<p>Voor de rol " + key + " heb je " + value + "% behaald.</p>");
-            if (score > maxwaarde){
-              maxnaam = key;
-              maxwaarde = score;
+            var score = value;
+          //  value = Math.round((value / 490) * 100).toFixed(0);
+            if (score > maxwaarde) {
+                maxnaam = key;
+                maxwaarde = score;
             }
 
         });
@@ -127,14 +126,37 @@ $(document).ready(function() {
             },
             /*Stuur variabelen door naar loginstudent.php*/
             success: function(html) {
-              Materialize.toast('Uw rol is opgeslagen', 3000, 'rounded');
-              console.log(html);
+                Materialize.toast('Uw rol is opgeslagen', 3000, 'rounded');
+                console.log(html);
             }
         });
 
-        console.log("hoogste gescoorde is " + maxnaam + " met " + maxwaarde +".");
+        console.log("hoogste gescoorde is " + maxnaam + " met " + maxwaarde + ".");
 
-        return sh;
+
+        var ctx = $("#resultaatChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Shaper", "Co-ordinator", "Plant", "Resource investigator", "Monitor Evaluator", "Implementer", "Team worker", "Completer finisher"],
+                datasets: [{
+                    label: 'Behaalde score',
+                    data: [sh, co, pl, ri, me, imp, tw, cf],
+                    responsive: true,
+                    backgroundColor: "rgba(75,192,192,0.8)",
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: false
+                        }
+                    }]
+                }
+            }
+        });
+
     };
 
 
