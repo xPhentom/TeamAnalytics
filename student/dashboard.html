@@ -1,62 +1,196 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
     <!--Laat de browser weten dat het geoptimalizeerd is voor mobiel-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-  <body>
+<body>
 
     <nav>
 
-      <div class="nav-wrapper">
-      <div id="logoclick"><img id = "logo" class="brand-logo" alt="logo" src="../logo.png"></div>
-      <ul class="right nav-mobile hide-on-med-and-down">
-        <li><div id="gotoStudentLogin" class="waves-effect navItems">Student</a></li>
-        <li><div id="gotoDocentLogin" class="waves-effect navItems">Docent</a></li><!-- TODO: add delay, om het effect af te spelen -->
-      </ul>
-      <ul id="slide-out" class="side-nav z-depth-4">
-        <li><a href="student/index.html" class="SideNavItems waves-effect"><b>Student</b></a></li>
-        <li><a href="docent/index.html" class="SideNavItems waves-effect"><b>Docent</b></a></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <div class="nav-wrapper">
+            <div id="logoclick"><img id="logo" class="brand-logo" alt="logo" src="../logo.png"></div>
+            <ul class="right nav-mobile hide-on-med-and-down">
+                <li>
+                    <div id="gotoStudentLogin" class="waves-effect navItems">Student</a>
+                </li>
+                <li>
+                    <div id="gotoDocentLogin" class="waves-effect navItems">Docent</a>
+                </li>
+                <!-- TODO: add delay, om het effect af te spelen -->
+            </ul>
+            <ul id="slide-out" class="side-nav z-depth-4">
+                <li><a href="student/index.html" class="SideNavItems waves-effect"><b>Student</b></a></li>
+                <li><a href="docent/index.html" class="SideNavItems waves-effect"><b>Docent</b></a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+    </nav>
+
+    <div id="dashboardstudent" class="row">
+        <div id="TileStudentToevoegen" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
+            <p class="dashboardtilestekst">Studenten toevoegen</p>
+        </div>
+        <div id="TileStudenBekijken" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
+            <p class="dashboardtilestekst">Studenten bekijken</p>
+        </div>
+        <div class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
+            <p class="dashboardtilestekst">Groepen bewerken</p>
+        </div>
+        <div id="gotoStudentQuiz" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
+            <p class="dashboardtilestekst">Quiz maken</p>
+        </div>
     </div>
-  </nav>
 
-  <div id="dashboardstudent" class="row">
-      <div id="TileStudentToevoegen" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
-          <p class="dashboardtilestekst">Studenten toevoegen</p>
-      </div>
-      <div id="TileStudenBekijken" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
-          <p class="dashboardtilestekst">Studenten bekijken</p>
-      </div>
-      <div class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l1 offset-m1 z-depth-4 waves-effect">
-          <p class="dashboardtilestekst">Groepen bewerken</p>
-      </div>
-      <div id="gotoStudentQuiz" class="dashboardtiles valign-wrapper col s10 m4 l4 offset-s1 offset-l2 offset-m2 z-depth-4 waves-effect">
-          <p class="dashboardtilestekst">Quiz maken</p>
-      </div>
-  </div>
-
-<!--**********************************************************************************
+    <!--**********************************************************************************
 ***********************************Q U I Z *******************************************
 ************************************************************************************** -->
 
 
-  <div id="StudentQuiz" class="row">
-      <div id="QuizScherm" class="col s8 m8 l8 offset-s2 offset-l2 offset-m2 z-depth-4">
-      </div>
-      <div class="col s8 m6 l4 offset-s2 offset-l6"><div class="waves-effect waves-light btn" id="btnVolgende">Volgende</div></div>
-      <div class="col s8 m6 l4 offset-s2 offset-l4"><div class="waves-effect waves-light btn" id="btnIndienen">Indienen</div></div>
+    <div id="StudentQuiz" class="row">
+        <div id="QuizScherm" class="col s8 m8 l8 offset-s2 offset-l2 offset-m2 z-depth-4">
+        </div>
+        <div class="col s8 m6 l4 offset-s2 offset-l6">
+            <div class="waves-effect waves-light btn" id="btnVolgende">Volgende</div>
+        </div>
+        <div class="col s8 m6 l4 offset-s2 offset-l4">
+            <div class="waves-effect waves-light btn" id="btnIndienen">Indienen</div>
+        </div>
 
-      <div id="QuizResultaatScherm" class="col s8 m8 l8 offset-s2 offset-l2 offset-m2 z-depth-4"><canvas id="resultaatChart" width="400" height="200"></canvas></div>
+        <div id="QuizResultaatScherm" class="col s8 m8 l8 offset-s2 offset-l2 offset-m2 z-depth-4">
+            <canvas id="resultaatChart" width="400" height="200"></canvas>
 
-  </div>
+            <!-- ROLLEN UITLEGGEN -->
+            <p>
+                <div class="roltitel">Shaper</div>
+                <br>
+                <div class="roltekst">Zorgt ervoor dat iedereen op het rechte pad blijft en niet afgeleid worden.
+                    <br>
+                    <b>Sterkte</b>
+                    <br> Uitdagend, dynamisch, gaat voor druk. Durft obstacles te overwinnen.
+                    <br>
+                    <b>Zwakte</b>
+                    <br> Kan zware taal brengen en hiermee mensen kwetsen.
+                    <br>
+                    <b>Kan gebeuren</b>
+                    <br> Shapers kunnen slecht gehumeurd of zelfs aggressief worden als niet alles in orde komt.
+                </div>
+            </p>
+            <p>
+                <div class="roltitel">Co-ordinator</div>
+                <br>
+                <div class="roltekst">Stelt doelen in het team op en kan taken aan de gepaste teamleden geven.
+                    <br>
+                    <b>Sterkte</b>
+                    <br>Volwassen, zelfverzekerd, kan talent zien, legt doelen goed vast.
+                    <br>
+                    <b>Zwakte</b>
+                    <br>Kan aangezien woorden als manipulatief en kan zijn werk afgeven aan anderen waardoor hijzelf niets te doen heeft.
+                    <br>
+                    <b>Kan gebeuren</b>
+                    <br>Ze kunnen teveel macht nemen en hiermee andere teamleden al het werk laten doen.
+                </div>
+            </p>
+
+            <div class="roltitel">Plant</div>
+            <br>
+            <div class="roltekst">Kan creatief zijn en problemen oplossen op een andere manier.
+                <br>
+                <b>Sterkte</b>
+                <br> Creatief, denkbeeldig, open-denkend, kan ideeën maken en moeilijke problemen oplossen.
+                <br>
+                <b>Zwakte</b>
+                <br> Kan te druk bezig zijn in zijn hoofd en hiermee het moeilijk hebben om contact te leggen.
+                <br>
+                <b>Kan gebeuren</b>
+                <br>Ze kunnen mentaal afwezig zijn en dingen vergeten.
+            </div>
+            <p>
+                <div class="roltitel">Resource Investigato</div>
+                <p>
+                    <div class="roltekst">Zo zijn nieuwsgierig om ideeën te vinden en deze naar het team te brengen.
+                        <br>
+                        <b>Sterkte</b>
+                        <br> Sociaal, enthousiast, kan mogelijkheden ontdekken en contacten leggen
+                        <br>
+                        <b>Zwakte</b>
+                        <br> Kan veel te optimistisch zijn en zijn enthousiasme verliezen als het toffe gedeelte gedaan is.
+                        <br>
+                        <b>Kan gebeuren</b>
+                        <br> Ze kunnen achterlopen op de feiten
+                    </div>
+                </p>
+                <p>
+                    <div class="roltitel">Monitor Evaluator</div>
+                    <br>
+                    <div class="roltekst">Kan een logisch zicht hebben en denkt zonder gevoelens aan de opties van het team.
+                        <br>
+                        <b>Sterkte</b>
+                        <br>Sober, strategisch en kan goed beoordelen. Kan alle opties zien en correct kiezen.
+                        <br>
+                        <b>Zwakte</b>
+                        <br>Kan het voor anderen niet meer inspirerend zijn, wat zeer belangrijk is.
+                        <br>
+                        <b>Kan gebeuren</b>
+                        <br> Monitor Evaluators kunnen traag zijn in hun beslissingen.
+                    </div>
+                </p>
+                <p>
+                    <div class="roltitel">Implementer</div>
+                    <br>
+                    <div class="roltekst">Is goed in het maken van een strategie en deze ook efficiënt uit te werken
+                        <br>
+                        <b>Sterkte</b>
+                        <br> Praktisch, kan vertrouwd worden, efficiënt. Kan ideeën in acties omzetten en organiseert zijn werk
+                        <br>
+                        <b>Zwakte</b>
+                        <br> Kan onflexibel zijn en traag reageren op nieuwe mogelijkheden.
+                        <br>
+                        <b>Kan gebeuren</b>
+                        <br> Implementers kunnen het moeilijk hebben om hun plannen te veranderen.
+                    </div>
+                </p>
+                <p>
+                    <div class="roltitel">Teamworker</div>
+                    <br>
+                    <div class="roltekst">Zorgt dat het team bij elkaar blijft en ziet wie welke vaardigheden heeft.
+                        <br>
+                        <b>Sterkte</b>
+                        <br> Kan goed samenwerken, mensen begrijpen en zich diplomatisch gedragen. Luisterd en vermijdt conflicten
+                        <br>
+                        <b>Zwakte</b>
+                        <br> Kan soms niet kiezen in moeilijke situaties en vermijdt confrontaties
+                        <br>
+                        <b>Kan gebeuren</b>
+                        <br> Teamworkers kunnen twijfelen om onpopulaire beslissingen te nemen.
+                    </div>
+                </p>
+                <p>
+                    <div class="roltitel">Completer finisher</div>
+                    <br>
+                    <div class="roltekst">Meest effectief op het einde van de opdracht, hij kijkt alles na en verbeterd tot het beste kwaliteit is bereikt.
+                        <br>
+                        <b>Sterkte</b>
+                        <br> Draagt veel zorg, werkt goed door, angstig, zoekt alle problemen en verwerkt ze tot perfectie.
+                        <br>
+                        <b>Zwakte</b>
+                        <br> Kan zich teveel zorgen maken en niet willen opkomen voor anderen
+                        <br>
+                        <b>Kan gebeuren</b>
+                        <br> Completer finishers kunnen beschuldigd worden door met hun perfect beeld de laat te hoog te leggen.
+                    </div>
+                    <br>
+                </p>
+        </div>
+
+    </div>
 
 
     <!--Import jQuery voor materialize.js-->
@@ -64,5 +198,6 @@
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/studentdashboardscript.js"></script>
     <script type="text/javascript" src="../js/Chart.js"></script>
-  </body>
+</body>
+
 </html>
